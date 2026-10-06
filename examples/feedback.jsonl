@@ -1,0 +1,3 @@
+{"id":"feedback-1","flag":"checkout_v2","environment":"production","text":"Since checkout v2, payment confirmation fails after submitting my card."}
+{"id":"feedback-2","flag":"checkout_v2","environment":"production","text":"The new checkout colors are nice."}
+{"id":"feedback-3","flag":"checkout_v2","environment":"production","text":"The new checkout feels weird."}
