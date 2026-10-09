@@ -21,3 +21,7 @@ Convierta comentarios libres sobre un feature flag en una decisión Jev versiona
 Sin conexión: `python3 rollout.py --demo` y `python3 -m unittest discover -s tests -v`. Declare los flags y entornos permitidos en `examples/config.json`. Para uso real, defina en privado `TYPESAFE_API_KEY` y un `JEV_INGEST_TOKEN` aleatorio de al menos 16 caracteres y ejecute `python3 rollout.py --serve`. Envíe JSON `{ "id": "id-unico", "flag": "checkout_v2", "environment": "production", "text": "..." }` a `POST /ingest` con `Authorization: Bearer <token>`. Prometheus consulta `GET /metrics` en el servidor local; conecte esa instancia a Unleash. El ID evita duplicados en los reintentos. Al cambiar la versión de política, el contador exportado vuelve al total de esa versión; Prometheus debe recopilar continuamente y gestionar los reinicios de contador. El texto se envía a Jev y no se guarda en SQLite. La API Jev se probó con datos sintéticos; no había una instancia Unleash real disponible.
 
 License: MIT. Tag: `v0.1.0`.
+
+## Contrôle d’adoption · Adoption check · Comprobación de adopción
+
+[Français : essayer un cas concret](examples/adoption-check.md) · [English: try a concrete case](examples/adoption-check.md) · [Español: pruebe un caso concreto](examples/adoption-check.md).
