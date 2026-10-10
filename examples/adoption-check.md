@@ -40,3 +40,15 @@ FR : adaptez une copie de la fixture locale à cette situation, puis vérifiez l
 EN: adapt a copy of the local fixture to this situation, then check the behavior described above. Values are illustrative, not measured Jev output.
 
 ES: adapte una copia de la fixture local a esta situación y compruebe el comportamiento descrito arriba. Los valores son ilustrativos, no resultados Jev medidos.
+
+## Second cas · Second case · Segundo caso
+
+```text
+policy_version=1 -> 2; metric_counter=reset
+```
+
+**FR :** Une nouvelle version de politique réinitialise la série exportée. Configurez la collecte Prometheus pour interpréter le reset avant d’en faire un garde de déploiement.
+
+**EN:** A new policy version resets the exported series. Configure Prometheus collection to interpret the reset before using it as a rollout safeguard.
+
+**ES:** Una nueva versión de política reinicia la serie exportada. Configure la recopilación de Prometheus para interpretar el reinicio antes de usarlo como protección del despliegue.
